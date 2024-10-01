@@ -50,7 +50,7 @@ function App() {
               <div>
                 {list.map((item, index) => (
                   <div key={index} className="wrapper" id='wrapper'>
-                    <i className="fa-regular fa-circle" onClick={(event) => checkItem(index, event)}></i>
+                    <i className="fa-regular fa-circle" onClick={(event) => checkItem(event)}></i>
                     {item}
                     <i onClick={() => removeItem(index)} className='remove fa-solid fa-xmark'></i>
                   </div>
